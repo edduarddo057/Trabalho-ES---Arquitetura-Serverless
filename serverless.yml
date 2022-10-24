@@ -1,0 +1,19 @@
+service: sls-my-first-lambda
+
+provider:
+  name: aws
+  runtime: nodejs//+versão node
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  memorySize: 128
+  timeout: 3
+
+functions:
+  index:
+  handler: index.handler
+  description: My first lambda example
+  events:
+    - http:
+      path: / //+rota
+      method: get
+      cors: true
