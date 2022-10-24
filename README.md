@@ -7,13 +7,13 @@ Essa atividade prática foi desenvolvida pelo Grupo 7:
 - **Italo Gustavo Donato Cordeiro**
 - **Rosane Silva Freitas Araujo**
 
-A atividade foi projetada para ser usada como os exemplos de prática da disciplina de Engenharia de Software. Nos baseamos no [livro](https://www.amazon.com.br/Serverless-Architectures-AWS-Peter-Sbarski/dp/1617293822) do Peter Sbarski - Serverless Architectures on AWS: With Examples Using AWS Lambda. 
+O modelo de arquitetura Serverless é uma espécie de desenvolvimento nativo em nuvem para criação e execução de aplicações sem o gerenciamento de servidores.
 
-Serverless é um modelo de desenvolvimento nativo em nuvem para criação e execução de aplicações sem o gerenciamento de servidores.
+Porém, é válido citar que os servidores ainda são usados nesse modelo, apesar dos mesmos serem abstraídos durante o desenvolvimento de aplicações. Sendo assim, um provedor de nuvem passa a ser o responsável pelas tarefas que fazem o provisionamento, a manutenção e também a escala da infraestrutura do servidor, ficando a encargo dos desenvolvedores a etapa de empacotar o código em containers e então realizar sua implementação.
 
-Os servidores ainda são usados nesse modelo, mas eles são abstraídos do desenvolvimento de aplicações. O provedor de nuvem fica responsável pelas tarefas rotineiras de provisionamento, manutenção e escala da infraestrutura do servidor. Os desenvolvedores só precisam empacotar o código em containers para fazer a implantação.
+Após realizada a implementação, as aplicações serverless devem ser capazes de suprir a demanda, podendo aumentar ou diminuir a escala automaticamente de acordo com as necessidades. 
 
-Depois da implantação, as aplicações serverless atendem à demanda e aumentam ou diminuem a escala automaticamente de acordo com as necessidades. As soluções serverless dos provedores de nuvem pública costumam ser oferecidas sob demanda por meio de um modelo de execução orientado a eventos. Por isso, não há cobrança pelas funções serverless não utilizadas.
+Baseamos então a prática pelo [projeto](https://github.com/tiagoboeing/youtube-serverless-framework-lambda-api-gateway) de estudo de um [especialista](https://www.linkedin.com/in/tiagoboeing/) em AWS.
 
  ## 1.  Instalação do Framework
 
